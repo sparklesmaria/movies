@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'DM Mono', monospace;
+    align-items: center;
+    color: #f0db25;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 30px;
+    color: #f0db25;
+}
+
+.nav-itens {
+    padding-top: -20px;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    color: #e2e2e2;
+}
+
+.nav-itens>li>a {
+    padding-left: 50px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login {
+    padding: 5px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #202020;
+    background-color: #fff;
+    font-family: 'DM Mono', monospace;
+    cursor: pointer;
+}
+
+.cadastro {
+    padding: 5px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #5a1468;
+    font-family: 'DM Mono', monospace;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.cadastro:hover {
+    background-color: #e7bb2a;
+    transition: 2s background;
+}
+
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 24px;
+    }
+  
+    .nav-itens {
+        font-size: 12px;
+    }
+  
+    .nav-itens>li>a {
+        padding-left: 30px;
+    }
+  
+    .login,
+    .cadastro {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 20px;
+    }
+  
+    .nav-itens {
+        font-size: 10px;
+    }
+  
+    .nav-itens>li>a {
+        padding-left: 20px;
+    }
+  
+    .login,
+    .cadastro {
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+}
